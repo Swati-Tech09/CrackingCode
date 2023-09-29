@@ -25,7 +25,7 @@ public class ObjectMapExample {
     }
 
     public static void main(String[] args) {
-      ObjectMapExample.Employee e =new ObjectMapExample.Employee(1,"SS");
+      ObjectMapExample.Employee e =new ObjectMapExample.Employee(1,"SG");
       ObjectMapExample.Employee e1 =new ObjectMapExample.Employee(2,"AG");
 
         HashMap<Integer, Employee> employeeHashMap = new HashMap<>();
