@@ -2,9 +2,9 @@ import java.util.concurrent.locks.ReadWriteLock;
 
 public class ReadWriteLockShared {
     public void add(ReadWriteLock lock) {
-        System.out.println("lock acquired " + Thread.currentThread().getName());
         try {
             lock.readLock().lock();
+            System.out.println("lock acquired " + Thread.currentThread().getName());
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);

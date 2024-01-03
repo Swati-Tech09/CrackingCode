@@ -26,11 +26,10 @@ public class ReadWriteLockMain {
             readWriteLockShared.consume(lock);
         });
 
-       // t1.start();
-        //t2.start();
-        t3.start();
         t1.start();
         t2.start();
+        t3.start();
+
 
         System.out.println("Main thread Exit " + Thread.currentThread().getName());
     }
