@@ -15,7 +15,7 @@ public class MultithreadingMain {
             System.out.println("Thread t2 calling");
             System.out.println("T2 Thread"+ Thread.currentThread().getName());
             try {
-                Thread.sleep(100);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -25,6 +25,13 @@ public class MultithreadingMain {
         t1.start();
         t2.start();
 
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        System.out.println("Main Thread ");
 
 
     }
