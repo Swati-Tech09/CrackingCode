@@ -1,4 +1,7 @@
 public class OptimisticLockThreadMain {
+
+    //Optimistic Lock - Stamp can validate whether any change been done .if its not match it will
+    // rollback
     public static void main(String[] args) {
         SharedOptimisticLock sharedOptimisticLock = new SharedOptimisticLock();
 
